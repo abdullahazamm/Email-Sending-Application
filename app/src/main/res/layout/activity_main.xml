@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edittextTo"
+        android:layout_width="340dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custfields"
+        android:hint="   To:"
+        android:textColorHint="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/EditTextSubject"
+        android:layout_width="340dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custfields"
+        android:hint="   Subject:"
+        android:lines="5"
+        android:textSize="24sp"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextTo" />
+
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="340dp"
+        android:layout_height="339dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custfields"
+        android:hint="   Your Message:"
+        android:lines="10"
+        android:textColorHint="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextSubject" />
+
+
+    <Button
+        android:id="@+id/sendbutton"
+        android:layout_width="197dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="32dp"
+        android:text="Send"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:background="#00BCD4"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMessage"
+        app:layout_constraintVertical_bias="0.092" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
